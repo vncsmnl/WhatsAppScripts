@@ -1,8 +1,6 @@
+### Video Demo Tutorial: https://www.youtube.com/watch?v=RG-dclLtYvA
+
 # WhatsAppScripts TravaZap
-
-This README provides information and usage guidelines for the `enviarScript` function, which is designed to send messages to a conversation on a web page.
-
-## Table of Contents
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
@@ -17,6 +15,9 @@ The `enviarScript` function is an asynchronous JavaScript function designed to s
 
 ## Prerequisites
 
+REQUIREMENT: WhatsApp Web Version
+https://web.whatsapp.com/
+
 Before using the `enviarScript` function, ensure the following:
 
 - The script is executed in an environment with access to the DOM (Document Object Model) as it interacts with web page elements.
@@ -27,7 +28,8 @@ Before using the `enviarScript` function, ensure the following:
 
 1. Include the script containing the `enviarScript` function in your HTML document.
 2. Ensure the conversation is open and accessible in the DOM.
-3. Call the `enviarScript` function with the desired script text.
+3. Press F12, open console tab and paste raw script.
+4. Enter to the `enviarScript` function with the desired script text.
 
 ## Parameters
 
