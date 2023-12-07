@@ -27,7 +27,7 @@ async function enviarScript(scriptText) {
     return lines.length;
 }
 
-enviarScript(`
+const script = `
 Não tinha medo o tal João de Santo Cristo
 Era o que todos diziam quando ele se perdeu
 Deixou pra trás todo o marasmo da fazenda
@@ -222,4 +222,8 @@ Ele queria era falar pro presidente
 Pra ajudar toda essa gente que só faz
 
 Sofrer
-`).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error);
+`;
+
+enviarScript(script)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);

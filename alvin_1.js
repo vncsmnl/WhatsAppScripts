@@ -27,7 +27,7 @@ async function enviarScript(scriptText) {
     return lines.length;
 }
 
-enviarScript(`
+const script = `
 ( os esquilos cantando "Bad Day" )
 
 ( Simon e Theodore vocalizando )
@@ -1410,4 +1410,8 @@ Dave: Não. [Champanhe atinge a faixa de energia; zumbidos de eletricidade; prob
 Alvin: OK!
 
 Ian: Ok, pessoal, vamos lá, vamos tentar novamente. Aqui vamos nós e cantamos. Vamos, cante para o seu tio Ian. Vamos lá, cante. Por quê--? Por que você não canta? Você sabe, eu disse, cante. Cantar.
-`).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error);
+`;
+
+enviarScript(script)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);

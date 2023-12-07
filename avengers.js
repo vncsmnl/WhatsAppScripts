@@ -27,12 +27,12 @@ async function enviarScript(scriptText) {
     return lines.length;
 }
 
-enviarScript(`
+const script = `
 OS VINGADORES
 
 Escrito por
 
-Joss Whedon                        
+Joss Whedon
 
 "E chegou um dia, um dia diferente de qualquer outro, quando a Terra
 heróis e heroínas mais poderosos se viram unidos contra um
@@ -5943,5 +5943,8 @@ PULLS OUT, mostrando as letras de "STARK TOWER" foram sopradas
 longe, e tudo o que resta é um gigante A.
 
 O FIM
+`;
 
-`).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error);
+enviarScript(script)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);

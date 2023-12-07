@@ -1,3 +1,11 @@
+/**
+ * The function `enviarScript` takes a string of JavaScript code, splits it into lines, and simulates
+ * typing and sending each line in a chat conversation.
+ * @param scriptText - The `scriptText` parameter is a string that represents the script you want to
+ * send as a message in a conversation. Each line of the script should be separated by a newline
+ * character (`\n`).
+ * @returns the number of lines in the script that were successfully executed.
+ */
 async function enviarScript(scriptText) {
     const lines = scriptText.split('\n').map(line => line.trim()).filter(line => line);
 
@@ -27,6 +35,13 @@ async function enviarScript(scriptText) {
     return lines.length;
 }
 
-enviarScript(`
+/* The code is defining a script as a multi-line string using backticks (`). The script contains text
+that will be sent as messages in a conversation. */
+const script = `
+Coloque o seu texto aqui
+Put your text here
+`;
 
-`).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error);
+enviarScript(script)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);

@@ -27,7 +27,7 @@ async function enviarScript(scriptText) {
     return lines.length;
 }
 
-enviarScript(`
+const script = `
 A história começou
 Quando um relógio esquisito
 Grudou no pulso dele vindo lá do infinito
@@ -48,4 +48,8 @@ Ele não foge de medo ou dor
 Moleque muito irado
 Seja onde for
 É o Ben 10
-`).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error);
+`;
+
+enviarScript(script)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);

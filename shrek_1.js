@@ -27,7 +27,7 @@ async function enviarScript(scriptText) {
     return lines.length;
 }
 
-enviarScript(`
+const script = `
 SHREK
 
 Escrito por
@@ -3705,4 +3705,8 @@ preto) Ah, isso é engraçado. Oh. Oh. Não posso
 respirar. Eu não consigo respirar.
 
 O FIM
-`).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error);
+`;
+
+enviarScript(script)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);
