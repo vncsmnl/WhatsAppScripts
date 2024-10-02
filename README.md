@@ -60,7 +60,7 @@ Feel free to customize the script and adapt the function to fit your specific us
 
 ## 📝 License.
 
-[![License](https://img.shields.io/github/license/vncsmnl/WhatsAppScripts?style=flat&logo=github&color=blue)](https://github.com/vncsmnl/guiadoprogramador/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/vncsmnl/WhatsAppScripts?style=flat&logo=github&color=blue)](https://github.com/vncsmnl/WhatsAppScripts/blob/main/LICENSE)
 
 ```
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
