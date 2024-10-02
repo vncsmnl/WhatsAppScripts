@@ -1,4 +1,4 @@
-async function enviarScript(scriptText) {
+async function enviarScript(scriptText, delay = 1000) {
     const lines = scriptText.split('\n').map(line => line.trim()).filter(line => line);
 
     const main = document.querySelector("#main");
@@ -20,7 +20,7 @@ async function enviarScript(scriptText) {
         sendButton.click();
 
         if (lines.indexOf(line) !== lines.length - 1) {
-            await new Promise(resolve => setTimeout(resolve, 250));
+            await new Promise(resolve => setTimeout(resolve, delay));
         }
     }
 
@@ -5945,6 +5945,6 @@ longe, e tudo o que resta é um gigante A.
 O FIM
 `;
 
-enviarScript(script)
+enviarScript(script, 2000)
     .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
     .catch(console.error);
