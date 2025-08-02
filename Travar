@@ -1,0 +1,10 @@
+// Example script to be sent
+const script = `
+Coloque o seu texto aqui
+Put your text here
+`;
+
+// Calling the enviarScript function
+enviarScript(script, 2000)
+    .then(e => console.log(`Código finalizado, ${e} mensagens enviadas`))
+    .catch(console.error);
